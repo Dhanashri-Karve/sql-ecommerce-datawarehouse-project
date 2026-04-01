@@ -25,7 +25,7 @@ CREATE TABLE bronze.olist_customers_dataset
 (
 	customer_id NVARCHAR(50),
 	customer_unique_id NVARCHAR(50),
-	customer_zip_code_prefix INT,
+	customer_zip_code_prefix NVARCHAR(10),
 	customer_city NVARCHAR(50),
 	customer_state NVARCHAR(10)
 );
@@ -37,7 +37,7 @@ GO
 
 CREATE TABLE bronze.olist_geolocation_dataset 
 (
-    geolocation_zip_code_prefix INT,
+    geolocation_zip_code_prefix NVARCHAR(10),
     geolocation_lat FLOAT,
     geolocation_lng FLOAT,
     geolocation_city NVARCHAR(50),
@@ -133,7 +133,7 @@ GO
 CREATE TABLE bronze.olist_sellers_dataset 
 (
     seller_id NVARCHAR(50),
-    seller_zip_code_prefix INT,
+    seller_zip_code_prefix NVARCHAR(10),
     seller_city NVARCHAR(100),
     seller_state NVARCHAR(10)
 );
