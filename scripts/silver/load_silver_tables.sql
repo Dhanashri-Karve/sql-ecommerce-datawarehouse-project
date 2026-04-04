@@ -3,9 +3,10 @@
 Procedure: silver.load_silver
 
 Description:
-	This stored procedure loads data from the Bronze layer into the Silver layer
-	It performs data cleansing,standardization, and validation 
-	before the data is used in the Gold layer
+	- This stored procedure performs ETL process to load data from the 
+	  Bronze layer into the Silver layer
+	- It performs data cleansing,standardization, and validation 
+	  before the data is used in the Gold layer
 
 How it works:
 	1. Truncates existing Silver tables and reloads them with transformed data.
