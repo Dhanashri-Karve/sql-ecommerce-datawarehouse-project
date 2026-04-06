@@ -38,11 +38,76 @@ The dataset contains information about:
 # Data Warehouse Architecture
 
 The warehouse follows a **Medallion Architecture** that organizes data into three layers.
+![Data Architecture!](https://github.com/Dhanashri-Karve/sql-ecommerce-datawarehouse-project/blob/main/docs/data_architecture.png)
 
+---
 
+## Bronze Layer – Raw Data
 
+The Bronze layer stores **raw source data** with minimal transformation.
 
+Characteristics:
 
+- Raw dataset ingestion
+- Original structure preserved
+- Serves as the **source of truth**
+- Enables traceability and recovery
+
+---
+
+## Silver Layer – Cleaned & Standardized Data
+
+The Silver layer focuses on **data cleaning and quality improvements**.
+
+Transformations include:
+
+- Removing duplicate records
+- Standardizing text formatting
+- Handling null values
+- Validating timestamps
+- Correcting inconsistent records
+
+This layer produces **clean and reliable datasets** ready for modeling.
+
+---
+
+## Gold Layer – Analytical Data Model
+
+The Gold layer contains **business-ready views** designed for analytics and reporting.
+
+A **Star Schema** is implemented consisting of:
+
+**Fact Table**
+
+- `fact_sales`
+
+**Dimension Tables**
+
+- `dim_customers`
+- `dim_products`
+- `dim_sellers`
+- `dim_geolocation` (reference dimension)
+
+These views are optimized for **analytical queries and BI tools**.
+
+# Data Model (Star Schema)
+
+The Gold layer implements a **Star Schema** where transactional data is stored in a fact table and descriptive attributes are stored in dimension tables.
+
+![Star Schema](images/star_schema.png)
+
+**Fact Table**
+
+- `fact_sales` – transactional order item data
+
+**Dimension Tables**
+
+- `dim_customers`
+- `dim_products`
+- `dim_sellers`
+- `dim_geolocation`
+
+The schema enables analysis across key business dimensions such as **customers, products, sellers, geography
 
 
 
