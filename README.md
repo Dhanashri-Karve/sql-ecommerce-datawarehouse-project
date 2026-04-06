@@ -94,7 +94,7 @@ These views are optimized for **analytical queries and BI tools**.
 
 The Gold layer implements a **Star Schema** where transactional data is stored in a fact table and descriptive attributes are stored in dimension tables.
 
-![Star Schema](images/star_schema.png)
+![Star Schema](https://github.com/Dhanashri-Karve/sql-ecommerce-datawarehouse-project/blob/main/docs/data_model.png)
 
 **Fact Table**
 
@@ -109,6 +109,19 @@ The Gold layer implements a **Star Schema** where transactional data is stored i
 
 The schema enables analysis across key business dimensions such as **customers, products, sellers, geography
 
+# Data Quality Checks
 
+Data validation was implemented during the **Silver layer transformation process** to ensure reliability.
+
+Key checks include:
+
+- Removing duplicate records
+- Standardizing text values
+- Handling missing values
+- Validating timestamp consistency
+- Correcting invalid delivery dates
+- Ensuring referential consistency between datasets
+
+These steps ensure the **Gold layer contains clean and trusted analytical data**.
 
 
