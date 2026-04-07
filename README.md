@@ -1,11 +1,11 @@
 ## Brazilian Olist Ecommerce Data Warehouse (Project Overview)
 
-This project implements a **SQL-based Data Warehouse** built using the Brazilian **Olist Ecommerce dataset** using Microsoft SQL Server.  
+This project implements a **SQL-based Data Warehouse** built using the Brazilian **Ecommerce dataset by Olist** using Microsoft SQL Server.  
 The objective is to transform raw ecommerce data into a **structured analytical model** that supports reporting, analytics, and business intelligence.
 
 The warehouse follows a **Medallion Architecture (Bronze → Silver → Gold)** where raw operational data is progressively cleaned, standardized, and transformed into a **star schema optimized for analytical workloads**.
 
-This project demonstrates core **data engineering concepts** including data ingestion, data quality validation, dimensional modeling, and warehouse design.
+This project demonstrates data ingestion, data quality validation, dimensional modeling, and warehouse design.
 
 # Project Requirements
 
@@ -21,7 +21,7 @@ The data warehouse was designed to achieve the following objectives:
 
 # Dataset
 
-**Source:** Brazilian Olist Ecommerce Dataset
+**Source:** [Brazilian E-Commerce Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 The dataset contains information about:
 
