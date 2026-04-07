@@ -123,5 +123,14 @@ Key checks include:
 - Ensuring referential consistency between datasets
 
 These steps ensure the **Gold layer contains clean and trusted analytical data**.
-[View]([Link Text](folder-name/))
+
+## Tools & Technologies
+
+- SQL (T-SQL)
+- Microsoft SQL Server
+- Data Warehouse Design
+- Dimensional Modeling
+- Medallion Architecture (Bronze, Silver, Gold)
+- Git
+- GitHub
 
